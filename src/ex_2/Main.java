@@ -5,6 +5,7 @@ public class Main {
 	public static void main(String[] args) {
 		for (int i = 1; i <= 7; i++) {
 			Coche coche = new Coche(i);
+			System.out.print(coche.toStringWithId() + " ");
 			new Thread(coche).start();
 		}
 		System.out.println("\n");
