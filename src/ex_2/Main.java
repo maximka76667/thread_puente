@@ -10,7 +10,7 @@ public class Main {
 		}
 		System.out.println("\n");
 
-		System.out.format("%30s = %50s = %-30s \n", "El lado izqierda", StringUtils.center(" La puente ", 50, '-'),
+		System.out.format("%30s = %50s = %-30s \n", "El lado izquierdo", StringUtils.center(" El puente ", 50, '-'),
 				"El lado derecho");
 	}
 

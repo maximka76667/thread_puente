@@ -64,7 +64,7 @@ public class Coche implements Runnable {
 			cochesDespuesPuente.add(0, coche);
 			coche.setIsPassed(true);
 			Thread.sleep(950);
-			System.out.println("\n" + StringUtils.center(" " + coche + " acaba de pasar ", 120, '-') + "\n");
+			System.out.println("\n" + StringUtils.center(" " + coche + " cruzo el puente ", 120, '*') + "\n");
 			show();
 			coches.notifyAll();
 		}
@@ -93,9 +93,6 @@ public class Coche implements Runnable {
 	public void show() {
 		System.out.format("%30s | %50s | %-30s", cochesAntesPuente, StringUtils.center(puente.showCochesWithId(), 50),
 				cochesDespuesPuente);
-//		System.out.println("El lado izqierda " + cochesAntesPuente);
-//		System.out.println("La puente " + coches);
-//		System.out.println("El lado derecho " + cochesDespuesPuente);
 		System.out.println();
 	}
 }
